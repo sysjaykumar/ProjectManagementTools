@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#create-project">Create Project</a></li>
+                <li><a href="#profile">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Active Projects</h2>
+            <div id="project-list">
+                <!-- Project cards will be dynamically added here -->
+            </div>
+        </section>
+
+        <!-- Create Project Section -->
+        <section id="create-project">
+            <h2>Create a New Project</h2>
+            <form id="create-project-form">
+                <label for="project-name">Project Name:</label>
+                <input type="text" id="project-name" required>
+                <label for="task-name">Task Name:</label>
+                <input type="text" id="task-name" required>
+                <label for="assign-task">Assign Task to:</label>
+                <input type="text" id="assign-task" required>
+                <button type="submit">Create Project</button>
+            </form>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile">
+            <h2>User Profile</h2>
+            <div id="user-info">
+                <p>Name: Jay Kumar</p>
+                <p>Email: sys.jaykumar@gmail.com</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Project Management Tool</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
